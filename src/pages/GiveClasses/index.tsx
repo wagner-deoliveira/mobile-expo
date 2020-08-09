@@ -13,6 +13,7 @@ const GiveClasses: React.FC = () => {
     function handleNavigateBack() {
         goBack();
     }
+
     return (
         <View style={styles.container}>
             <ImageBackground  resizeMode='contain' source={bgImage} style={styles.content}>
