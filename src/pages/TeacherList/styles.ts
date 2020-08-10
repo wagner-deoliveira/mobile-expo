@@ -37,6 +37,21 @@ const styles = StyleSheet.create({
 
     inputBlock: {
         width: '48%'
+    },
+
+    submitButton: {
+        backgroundColor: '#04d361',
+        flexDirection: 'row',
+        height: 56,
+        borderRadius: 8,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+
+    submitButtonText: {
+        color: '#FFF',
+        fontFamily: 'Archivo_700Bold',
+        fontSize: 16
     }
 })
 
