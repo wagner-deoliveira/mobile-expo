@@ -18,7 +18,6 @@ const Favorites: React.FC = () => {
                 <TeacherItem />
             </ScrollView>
         </View>
-
     );
 }
 
