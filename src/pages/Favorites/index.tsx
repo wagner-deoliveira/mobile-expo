@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {ScrollView, View} from 'react-native';
 import TeacherItem, {Teacher} from "../../components/TeacherItem";
 import PageHeader from "../../components/PageHeader";
@@ -18,7 +18,7 @@ const Favorites: React.FC = () => {
                 setFavorites(favTeachers);
             }
         });
-    };
+    }
 
     useFocusEffect(() => {
         loadFavs();
