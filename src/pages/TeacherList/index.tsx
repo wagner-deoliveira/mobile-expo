@@ -10,7 +10,10 @@ const TeacherList: React.FC = () => {
     return (
         <View style={styles.container}>
             <PageHeader title="Available Proffys" />
-            <ScrollView>
+            <ScrollView style={styles.teacherList} contentContainerStyle={{
+                paddingHorizontal: 16,
+                paddingBottom: 16
+            }}>
                 <TeacherItem />
                 <TeacherItem />
                 <TeacherItem />
