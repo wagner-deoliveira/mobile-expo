@@ -9,7 +9,7 @@ import  landingImg from '../../assets/images/landing.png';
 import studyIcon from '../../assets/images/icons/study.png'
 import giveClasses from '../../assets/images/icons/give-classes.png'
 import heartIcon from '../../assets/images/icons/heart.png'
-import api from "../../../../web/src/services/api";
+import api from "../../services/api";
 
 const Landing: React.FC = () => {
     const {navigate} = useNavigation();
