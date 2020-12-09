@@ -26,5 +26,13 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run npm packages update
-        run: npm update
+      - name: package-update
+        uses: taichi/actions-package-update@master
+        env:
+          AUTHOR_EMAIL: wagner.deoliveira@perkinelmer.com
+          AUTHOR_NAME: Wagner
+          EXECUTE: "true"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UPDATE_COMMAND: yarn
+        with:
+          args: upgrade --latest
